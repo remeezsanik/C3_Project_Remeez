@@ -41,11 +41,11 @@ public class Restaurant {
 //        }
 //        return total;
 //    }
-//    public boolean cartItem() {
-//        if (cart.size() != 0) {
-//            return true;
-//        } else return false;
-//    }
+    public boolean cartItem() {
+        if (cart.size() != 0) {
+            return true;
+        } else return false;
+    }
 
 
     private Item findItemByName(String itemName){

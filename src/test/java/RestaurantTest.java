@@ -80,10 +80,10 @@ class RestaurantTest {
 //        int totalValue = restaurant.totalPrice();
 //        assertEquals(totalValue, restaurant.totalPrice());
 //    }
-//    @Test
-//    public void When_cart_has_no_items_it_should_return_false(){
-//        restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
-//        boolean result = restaurant.cartItem();
-//        assertEquals(false, result);
-//    }
+    @Test
+    public void When_cart_has_no_items_it_should_return_false(){
+        restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
+        boolean result = restaurant.cartItem();
+        assertEquals(false, result);
+    }
 }
