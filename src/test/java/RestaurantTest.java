@@ -72,14 +72,14 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//    @Test
-//    public void calculating_total_price_of_items_added_in_cart() {
-//        restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
-//        restaurant.addToCart("Sweet corn soup", 119);
-//        restaurant.addToCart("Vegetable lasagne", 269);
-//        int totalValue = restaurant.totalPrice();
-//        assertEquals(totalValue, restaurant.totalPrice());
-//    }
+    @Test
+    public void calculating_total_price_of_items_added_in_cart() {
+        restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
+        restaurant.addToCart("Sweet corn soup", 119);
+        restaurant.addToCart("Vegetable lasagne", 269);
+        int totalValue = restaurant.totalPrice();
+        assertEquals(totalValue, restaurant.totalPrice());
+    }
     @Test
     public void When_cart_has_no_items_it_should_return_false(){
         restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);

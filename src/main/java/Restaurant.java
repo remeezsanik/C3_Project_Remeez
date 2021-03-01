@@ -30,17 +30,17 @@ public class Restaurant {
         return this.menu;
 
     }
-//    public void addToCart (String name, int price){
-//        Item cartItem = new Item(name, price);
-//        cart.add(cartItem);
-//    }
-//    public int totalPrice() {
-//        int total = 0;
-//        for (Item item1:cart) {
-//            total+=item1.getPrice();
-//        }
-//        return total;
-//    }
+    public void addToCart (String name, int price){
+        Item cartItem = new Item(name, price);
+        cart.add(cartItem);
+    }
+    public int totalPrice() {
+        int total = 0;
+        for (Item item1:cart) {
+            total+=item1.getPrice();
+        }
+        return total;
+    }
     public boolean cartItem() {
         if (cart.size() != 0) {
             return true;
